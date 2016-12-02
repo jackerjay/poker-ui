@@ -1,0 +1,82 @@
+.poker-button {
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker-button {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0.5em 1em;
+    color: #444;
+    color: rgba(0, 0, 0, 0.80);
+    border: 1px solid #999;
+    border: none rgba(0, 0, 0, 0);
+    background-color: #F2F2F2;
+    text-decoration: none;
+    border-radius: 1px;
+}
+
+.poker-button:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+}
+
+.poker-button:focus {
+    outline: 0;
+}
+
+.poker-button:active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.poker-button-hidden {
+    display: none;
+}
+
+.poker-button[disabled],
+.poker-button-disabled,
+.poker-button-disabled:hover,
+.poker-button-disabled:focus,
+.poker-button-disabled:active {
+    border: none;
+    background-image: none;
+    opacity: 0.50;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.poker-button-selected,
+.poker-button-primary,
+a.poker-button-selected,
+a.poker-button-primary {
+    background-color: #0CB4CC;
+    color: #fff;
+}
+
+.poker-button-ghost,
+a.poker-button-ghost {
+    background-color: transparent;
+    border: #F2F2F2 solid 1px;
+}
+
+.poker-button-ghost:hover,
+a.poker-button-ghost:hover{
+    border: 1px solid #22C8E1;
+    background-image: none;
+}
+
+.poker-button-ghost:active,
+a.poker-button-ghost:active{
+    border: 1px solid #0CB4CC;
+}

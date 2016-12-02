@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="../../../build/css/base.css">
+	<link rel="stylesheet" href="../../../build/css/forms.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<style>
+
+	</style>
+</head>
+<body>
+<h2>Poker Form Test</h2>
+<div>
+	<h2>Normal Radio & Checkbox</h2>
+	<form class="poker-form">
+		<input type="radio" id="a1" name="radio"/>
+		<label for="a1">Normal Radio</label>
+		<input type="radio" id="a2" name="radio"/>
+		<label for="a2">Normal Radio</label>
+		<input type="checkbox" id="c1"/>
+		<label for="c1">Normal Checkbox</label>
+	</form>
+	<h2>Disabled Radio & Checkbox</h2>
+	<form class="poker-form">
+		<input type="radio" id="da1" disabled/>
+		<label for="da1">Disabled Radio</label>
+		<input type="checkbox" id="dc1" disabled/>
+		<label for="dc1">Disabled Checkbox</label>
+	</form>
+	<h2>Normal Input</h2>
+	<form class="poker-form" style="width: 20em;">
+		<label>默认输入框： <input type="text" placeholder="text"></label><br>
+		<label>默认数字输入框： <input type="number" placeholder="number"></label><br>
+		<label>默认文本区域： <textarea></textarea></label>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="../../../build/css/dropDown.css">
+	<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+<div>
+
+	<h2>Dropdown </h2>
+	<h2>default Dropdown 默认的下拉菜单</h2>
+	<div>
+		<select class="poker-dropdown" id="test2" data-default-value="1">
+			<option value="1">测试1</option>
+			<option value="2">测试2</option>
+			<option value="3">测试3</option>
+		</select>
+	</div>
+
+	<h2>带有滚动条的下拉菜单</h2>
+	<div>
+		<select class="poker-dropdown" id="test1">
+		</select>
+	</div>
+</div>
+
+<script>
+	var option = null;
+	for(var i = 0; i < 10; i++ ){
+		option = document.createElement("option");
+		option.innerHTML = "测试" + i;
+		option.value = i;
+		document.getElementById("test1").appendChild(option);
+	}
+</script>
+<script src="../../../build/js/dropDown.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+
+.poker-form input[type="text"],
+.poker-form input[type="password"],
+.poker-form input[type="email"],
+.poker-form input[type="tel"],
+.poker-form input[type="number"],
+.poker-form input[type="url"],
+.poker-form input[type="date"],
+.poker-form input[type="month"],
+.poker-form input[type="time"],
+.pure-form input[type="datetime"],
+.pure-form input[type="datetime-local"],
+.pure-form input[type="week"],
+.pure-form input[type="search"],
+.pure-form input[type="color"],
+.poker-form textarea,
+.poker-form select{
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: with 1s;
+    height: 2em;
+    width: 100%;
+}
+
+.poker-form textarea {
+    overflow: hidden;
+}
+
+.poker-form input[type="text"]:focus,
+.poker-form input[type="password"]:focus,
+.poker-form input[type="email"]:focus,
+.poker-form input[type="tel"]:focus,
+.poker-form input[type="number"]:focus,
+.poker-form input[type="url"]:focus,
+.poker-form input[type="date"]:focus,
+.poker-form input[type="month"]:focus,
+.poker-form input[type="time"]:focus,
+.pure-form input[type="datetime"]:focus,
+.pure-form input[type="datetime-local"]:focus,
+.pure-form input[type="week"]:focus,
+.pure-form input[type="search"]:focus,
+.pure-form input[type="color"]:focus,
+.poker-form textarea:focus,
+.poker-form select:focus {
+    border: 1px solid #0CB4CC;
+    -webkit-box-shadow: 0 0 0 2px rgba(78, 255, 164, 0.40);
+    -moz-box-shadow: 0 0 0 2px rgba(78, 255, 164, 0.40);
+    box-shadow: 0 0 0 2px rgba(78, 255, 164, 0.40);
+}
+
+.poker-form input[type="text"]:hover,
+.poker-form input[type="password"]:hover,
+.poker-form input[type="email"]:hover,
+.poker-form input[type="tel"]:hover,
+.poker-form input[type="number"]:hover,
+.poker-form input[type="url"]:hover,
+.poker-form input[type="date"]:hover,
+.poker-form input[type="month"]:hover,
+.poker-form input[type="time"]:hover,
+.pure-form input[type="datetime"]:hover,
+.pure-form input[type="datetime-local"]:hover,
+.pure-form input[type="week"]:hover,
+.pure-form input[type="search"]:hover,
+.pure-form input[type="color"]:hover,
+.poker-form textarea:hover,
+.poker-form select:hover {
+    border: 1px solid #0CB4CC;
+}
+
+.poker-form select {
+    height: 2.25em;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+}
+
+.poker-form input[type="checkbox"],
+.poker-form input[type="radio"] {
+    display: none;
+}
+
+.poker-form input[type="checkbox"] + label,
+.poker-form input[type="radio"] + label {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.5em;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.poker-form input[type="checkbox"] + label:before,
+.poker-form input[type="radio"] + label:before {
+    border:1px solid #e2e2e2;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    content: '';
+}
+
+.poker-form input[type="checkbox"] + label:hover:before,
+.poker-form input[type="radio"] + label:hover:before {
+    border-color: #0CB4CC;
+}
+
+.poker-form input[type="radio"] + label:before {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.poker-form input[type="checkbox"] + label:before {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.poker-form input[type="checkbox"] + label:after,
+.poker-form input[type="radio"] + label:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+.poker-form input[type="radio"] + label:after {
+    top: 0.2em;
+    left: 0.2em;
+    height: 0.6em;
+    width: 0.6em;
+    background: #0CB4CC;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker-form input[type="checkbox"] + label:after {
+    top: 0.2em;
+    left: 0.35em;
+    border-width: 0.15em;
+    border-color: #fff;
+    border-top:0;
+    border-left:0;
+    border-style:solid;
+    width: 0.3em;
+    height: 0.6em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker-form input[type="radio"]:checked + label:before {
+    border-color: #0CB4CC;
+}
+
+.poker-form input[type="checkbox"]:checked + label:before {
+    border-color: #0CB4CC;
+    background-color: #0CB4CC;
+}
+
+.poker-form input[type="checkbox"]:checked + label:after,
+.poker-form input[type="radio"]:checked + label:after {
+    display: block;
+}
+
+.poker-form input[type="checkbox"][disabled] + label,
+.poker-form input[type="radio"][disabled] + label {
+    cursor: not-allowed;
+    color: #c0c0c0;
+}
+
+.poker-form input[type="checkbox"][disabled] + label:before,
+.poker-form input[type="radio"][disabled] + label:before {
+    background-color: #e2e2e2;
+}
+
+.poker-form input[type="checkbox"][disabled] + label:hover,
+.poker-form input[type="checkbox"][disabled] + label:before,
+.poker-form input[type="checkbox"][disabled] + label:after,
+.poker-form input[type="radio"][disabled] + label:hover,
+.poker-form input[type="radio"][disabled] + label:before,
+.poker-form input[type="radio"][disabled] + label:after {
+    cursor: not-allowed;
+}
+
+.poker-form input[type="checkbox"][disabled] + label:hover:before,
+.poker-form input[type="radio"][disabled] + label:hover:before {
+    border: 1px solid #e2e2e2;
+}
