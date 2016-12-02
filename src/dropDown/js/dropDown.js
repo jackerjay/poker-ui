@@ -63,14 +63,13 @@ function initItem(dropdownItems) {
 
 function _addSpanEvent(e) {
 	var ulNode = this.parentNode.getElementsByTagName("ul")[0];
-	
 	if (e.type === "click") {
 		if (ulNode.classList.contains("poker-dropdown-visible")) {
 			ulNode.classList.remove("poker-dropdown-visible");
-			e.stopPropagation();
 		} else {
 			ulNode.classList.add("poker-dropdown-visible");
 		}
+        e.stopPropagation();
 	} else if (e.type === "mouseover") {
 		ulNode.classList.add("poker-dropdown-visible");
 		ulNode.style.top = this.offsetHeight + this.offsetTop + "px";
@@ -82,7 +81,7 @@ function _addSpanEvent(e) {
 	while (dropdowns.length > 0) {
 		initItem(dropdowns[0]);
 	}
-	document.getElementsByTagName("body")[0].addEventListener("click", function() {
+	document.getElementsByTagName("body")[0].addEventListener("click", function(e) {
 		var _dropdowns = document.getElementsByClassName("poker-dropdown-menu poker-dropdown-visible");
 		if (_dropdowns.length > 0) {
 			for (var i = 0; i < _dropdowns.length; i ++) {
