@@ -35,10 +35,6 @@ module.exports = function (grunt) {
 			build: {
 				files: [
 					{
-						'build/css/base.css': [
-							'node_modules/normalize.css/normalize.css',
-							'build/css/base.css'
-						],
 						'build/css/buttons.css': [
 							'build/css/buttons-core.css',
 							'build/css/buttons.css'

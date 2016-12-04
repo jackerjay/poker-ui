@@ -1,0 +1,183 @@
+
+/*********************
+        Standard
+**********************/
+
+/*-----------------
+        Inputs
+-----------------*/
+.poker.input input{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-size: inherit;
+    margin-top: 14px;
+}
+
+/*-----------------
+        Label
+-----------------*/
+
+.poker.input.label {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.298039);
+    top: 38px;
+    font-size: inherit;
+    -webkit-transform: scale(1) translate(0, 0);
+    -moz-transform: scale(1) translate(0, 0);;
+    -ms-transform: scale(1) translate(0, 0);;
+    -o-transform: scale(1) translate(0, 0);;
+    transform: scale(1) translate(0, 0);;
+    z-index: 1;
+    pointer-events: none;
+    -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -ms-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -o-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+/*-----------------
+    Wrapper Div
+-----------------*/
+
+.poker.input.div {
+    position: relative;
+    display: inline-block;
+    width: 256px;
+    height: 72px;
+}
+
+/*------------------
+    Placeholder
+-------------------*/
+
+.poker.input.placeholder {
+    opacity: 0;
+    bottom: 12px;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.298039);
+    -webkit-transition: all 450ms ;
+    -moz-transition: all 450ms;
+    -ms-transition: all 450ms;
+    -o-transition: all 450ms;
+    transition: all 450ms;
+}
+
+/*------------------
+  Inputs Bottom Line
+-------------------*/
+
+.poker.input.bottom.line {
+    border-top:none rgb(224,224,224);
+    border-right: none rgb(224,224,224);
+    border-bottom: 1px solid rgb(224,224,224);
+    border-left: none rgb(224,224,2224);
+    bottom: 8px;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/*------------------
+  Inputs Bottom Resting Line
+-------------------*/
+
+.poker.input.bottom.resting.line {
+    border-top:none rgb(0, 188, 212);
+    border-right:none rgb(0, 188, 212);
+    border-left:none rgb(0, 188, 212);
+    border-bottom:2px solid rgb(0, 188, 212);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -ms-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -o-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+
+/************************
+        States
+************************/
+
+/*------------------
+    Inputs Disabled
+-------------------*/
+
+.poker.input input[disabled],
+.poker.input.disabled {
+    background-color: transparent;
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.298039);
+}
+
+/*-----------------
+    Inputs Div Wrapper Disabled
+-----------------*/
+
+.poker.input.div.disabled {
+    cursor: not-allowed;
+}
+
+/*-----------------
+     Input Bottom Line Disabled
+-----------------*/
+
+.poker.input.bottom.line.disabled {
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.298039);
+}
+
+/*-----------------
+     Label Active
+-----------------*/
+
+.poker.input.label.active {
+    color: rgb(0, 188, 212);
+    transform-origin: left top 0px;
+    -webkit-transform: scale(0.75) translate(0px, -28px);
+    -moz-transform: scale(0.75) translate(0px, -28px);
+    -ms-transform: scale(0.75) translate(0px, -28px);
+    -o-transform: scale(0.75) translate(0px, -28px);
+    transform: scale(0.75) translate(0px, -28px);
+}
+
+/*-----------------
+     Label Active Float
+(when focus not here and the input has value)
+-----------------*/
+
+.poker.input.label.active.float {
+    color: rgba(0, 0, 0, 0.298039);
+}
+
+/*-----------------
+    Placeholder Active
+(when the input has not value and focus here)
+-----------------*/
+
+.poker.input.placeholder.active {
+    opacity: 1;
+}
+
+/*-----------------
+    Resting Line Active
+    (when focus here)
+-----------------*/
+
+.poker.input.bottom.resting.line.active {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+

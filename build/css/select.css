@@ -1,0 +1,109 @@
+.poker.select {
+    display: inline-block;
+    outline: none;
+}
+
+.poker.select.options{
+    outline: none;
+    position: absolute;
+    text-align: left;
+    display: none;
+    background-color: #fff;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    list-style-type: none;
+    border: 1px solid #d9d9d9;
+    padding: 0;
+    margin: 0.2em 0 0 0;
+    max-height: 100px;
+    min-width: 8em;
+    overflow-y: auto;
+    z-index: 1000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker.select.options ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.poker.select.active .options{
+    display: block;
+}
+
+.poker.select.option {
+    display: block;
+    cursor: pointer;
+    border-top: 1px solid #FAFAFA;
+}
+
+.poker.select.option span {
+    padding: 0.2em 0.3em;
+    display: block;
+}
+
+.poker.select.option:hover {
+    background-color: rgba(57, 214, 255, 0.3);
+}
+
+.poker.select:focus {
+
+}
+
+.poker.select.active {
+
+}
+
+.poker.select.placeholder {
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    border: 1px solid #d9d9d9;
+    height: auto;
+    width: 8em;
+    text-align: left;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    cursor: pointer;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker.select.placeholder:after {
+    height: 0.2em;
+    width: 0.2em;
+    border-bottom: 2px solid #c0c0c0;
+    border-right: 2px solid #c0c0c0;
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: 0.5em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+}
+
+.poker.select.placeholder:hover:after{
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.poker.select.options {
+
+}
+
+.poker.select.option.selected {
+
+}
