@@ -123,8 +123,10 @@
 		window.PokerInputFx = PokerInputFx;
 	}
 	
-	[].slice.call(document.querySelectorAll(['poker', 'input'])).forEach(function (input) {
-		new PokerInputFx(input);
-	});
+	window.onload = function(){
+			[].slice.call(document.querySelectorAll(['poker', 'input'])).forEach(function (input) {
+				new PokerInputFx(input);
+			});
+	};
 	
 })(window);

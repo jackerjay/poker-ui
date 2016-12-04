@@ -1,4 +1,4 @@
-(function(window) {
+(function (window) {
 	
 	'use strict';
 	
@@ -7,11 +7,11 @@
 		this._init();
 	}
 	
-	PokerInputFx.prototype._init = function() {
+	PokerInputFx.prototype._init = function () {
 		this._createInputDiv();
 	};
 	
-	PokerInputFx.prototype._createInputDiv = function() {
+	PokerInputFx.prototype._createInputDiv = function () {
 		var parent = this.input.parentNode,
 			newDiv = document.createElement('div'),
 			label = document.createElement('label'),
@@ -58,7 +58,7 @@
 				classie.add(this.activeLabel, 'float');
 			}
 			this._initEvents();
-		} else if (this.input.value != '' && this.input.value.length > 0){
+		} else if (this.input.value != '' && this.input.value.length > 0) {
 			classie.add(this.input, 'disabled');
 			classie.add(this.newDiv, 'disabled');
 			classie.add(this.hr, 'disabled');
@@ -71,35 +71,35 @@
 		}
 	};
 	
-	PokerInputFx.prototype._initEvents = function() {
+	PokerInputFx.prototype._initEvents = function () {
 		
 		var self = this;
 		
-			document.addEventListener('click', function (el) {
-				if (el.target !== self.input) {
-					classie.remove(self.activeHr, 'active');
-					classie.remove(self.placeholderDiv, 'active');
-					if (self.input.value != '' && self.input.value.length > 0) {
-						classie.add(self.activeLabel, 'float');
-					} else {
-						classie.remove(self.activeLabel, 'float');
-						classie.remove(self.activeLabel, 'active');
-					}
+		document.addEventListener('click', function (el) {
+			if (el.target !== self.input) {
+				classie.remove(self.activeHr, 'active');
+				classie.remove(self.placeholderDiv, 'active');
+				if (self.input.value != '' && self.input.value.length > 0) {
+					classie.add(self.activeLabel, 'float');
 				} else {
-					self._toggleSelect(el);
+					classie.remove(self.activeLabel, 'float');
+					classie.remove(self.activeLabel, 'active');
 				}
-			});
-			
-			this.input.addEventListener('keyup', function (el) {
-				if (el.target.value == '' || el.target.value.length < 1) {
-					classie.add(self.placeholderDiv, 'active');
-				} else {
-					classie.remove(self.placeholderDiv, 'active');
-				}
-			});
+			} else {
+				self._toggleSelect(el);
+			}
+		});
+		
+		this.input.addEventListener('keyup', function (el) {
+			if (el.target.value == '' || el.target.value.length < 1) {
+				classie.add(self.placeholderDiv, 'active');
+			} else {
+				classie.remove(self.placeholderDiv, 'active');
+			}
+		});
 	};
 	
-	PokerInputFx.prototype._toggleSelect = function(el) {
+	PokerInputFx.prototype._toggleSelect = function (el) {
 		if (classie.has(this.input, 'active')) {
 			classie.remove(this.activeHr, 'active');
 			classie.remove(this.activeLabel, 'active');
@@ -118,14 +118,15 @@
 	};
 	
 	if (typeof define === 'function' && define.amd) {
-		define( PokerInputFx );
+		define(PokerInputFx);
 	} else {
 		window.PokerInputFx = PokerInputFx;
 	}
 	
-	
-		[].slice.call(document.querySelectorAll(['poker', 'input'])).forEach(function(input) {
-			new PokerInputFx(input);
-		});
+	window.onload = function(){
+			[].slice.call(document.querySelectorAll(['poker', 'input'])).forEach(function (input) {
+				new PokerInputFx(input);
+			});
+	};
 	
 })(window);
