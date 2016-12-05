@@ -18,6 +18,13 @@ module.exports = function (grunt) {
 				flatten: true
 			},
 			
+			buildFont: {
+				src: 'src/**/fonts/**/*.*',
+				dest: 'build/fonts/',
+				expand: true,
+				flatten: true
+			},
+			
 			buildJS: {
 				src: 'src/**/js/*.js',
 				dest: 'build/js/',
@@ -56,6 +63,7 @@ module.exports = function (grunt) {
 		'clean:build',
 		'copy:build',
 		'copy:buildJS',
+		'copy:buildFont',
 		'concat:build'
 	]);
 };

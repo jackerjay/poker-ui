@@ -6,45 +6,47 @@
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<link href="http://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
 	<link rel="stylesheet" href="../../../build/css/base.css">
 	<link rel="stylesheet" href="../../../build/css/buttons.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-
-	<style>
-		.poker-button-radius {
-			border-radius: 1em;
-		}
-	</style>
 </head>
 <body>
 	<h2>Poker Button Test</h2>
 	<div>
-		<h2>Normal Buttons</h2>
-		<button class="poker-button">Normal Button</button>
-		<a class="poker-button">An anchor Button</a>
+		<h2>Flat Buttons</h2>
+		<button class="poker button">Default</button>
+		<button class="poker primary button">Primary</button>
+		<button class="poker secondary button">Secondary</button>
 
-		<h2>Primary Buttons</h2>
-		<button class="poker-button poker-button-primary">Primary Button</button>
-		<a class="poker-button poker-button-primary">An anchor Button</a>
+		<h3>Anchor Button</h3>
+		<a class="poker button">Default</a>
+		<a class="poker primary button">Primary</a>
+		<a class="poker secondary button">Secondary</a>
 
-		<h2>Ghost Buttons</h2>
-		<button class="poker-button poker-button-ghost">Ghost Button</button>
-		<a class="poker-button poker-button-ghost">An anchor Button</a>
+		<h3>Disabled Button</h3>
+		<button class="poker button" disabled>Disabled</button>
+		<button class="poker button disabled">Disabled</button>
 
-		<h2>Disabled Buttons</h2>
-		<button class="poker-button poker-button-disabled">Disabled Button</button>
-		<button class="poker-button" disabled>Disabled Button</button>
-		<a class="poker-button poker-button-disabled">An anchor Button</a>
+		<h3>With Icon</h3>
+		<button class="poker button"><i class="material-icons">face</i></button>
+		<button class="poker button"><i class="material-icons" style="color:red">info</i></button>
+		<button class="poker button"><i class="material-icons" style="color:grey">g_translate</i>Button</button>
+		<button class="poker button">代码 <i class="material-icons">code</i></button>
 
-		<h2>Custom Buttons</h2>
-		<button class="poker-button poker-button-primary poker-button-radius">Radius Button</button>
-		<br>
-		<br>
-		<a class="poker-button poker-button-primary">
-			<i class="fa fa-bell"></i>
-			Icon Button
-		</a>
+		<h2>Raised Buttons</h2>
+		<button class="poker raised button">DEFAULT</button>
+		<button class="poker raised primary button">Primary</button>
+		<button class="poker raised secondary button">Secondary</button>
+		<button class="poker raised button" disabled>disabled</button>
+		<button class="poker raised button disabled">disabled</button>
+
+		<h3>Anchor Button</h3>
+		<a class="poker raised button">DEFAULT</a>
+		<a class="poker raised primary button">Primary</a>
+		<a class="poker raised secondary button">Secondary</a>
+		<a class="poker raised button disabled" href="http://github.com">disabled</a>
 	</div>
+	<script src="../../../build/js/classie.js"></script>
+	<script src="../../../build/js/button.js"></script>
 </body>
 </html>

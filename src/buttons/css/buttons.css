@@ -1,66 +1,91 @@
-
-.poker-button {
-    font-family: inherit;
-    font-size: 100%;
-    padding: 0.5em 1em;
-    color: #444;
-    color: rgba(0, 0, 0, 0.80);
-    border: 1px solid #999;
-    border: none rgba(0, 0, 0, 0);
-    background-color: #F2F2F2;
-    text-decoration: none;
-    border-radius: 1px;
-}
-
-.poker-button:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-}
-
-.poker-button:focus {
-    outline: 0;
-}
-
-.poker-button:active {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
-}
-
-.poker-button-hidden {
-    display: none;
-}
-
-.poker-button[disabled],
-.poker-button-disabled,
-.poker-button-disabled:hover,
-.poker-button-disabled:focus,
-.poker-button-disabled:active {
+.poker.button {
     border: none;
-    background-image: none;
-    opacity: 0.50;
+    color: rgba(0, 0, 0, 0.870588);
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 36px;
+    font-size: inherit;
+    font-weight: inherit;
+    position: relative;
+    -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    -ms-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    -o-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+}
+
+.poker.button:hover {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+.poker.button.primary {
+    color: rgb(0, 188, 212);
+}
+
+.poker.button.secondary {
+    color: rgb(255, 64, 129);
+}
+
+.poker.button.raised {
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}
+
+.poker.button.raised.primary {
+    background-color: rgb(0, 188, 212);
+    color: rgb(255, 255, 255);
+}
+
+.poker.button.raised.secondary {
+    background-color: rgb(255, 64, 129);
+    color: rgb(255, 255, 255);
+}
+
+.poker.button.raised.primary:hover {
+    background-color: rgb(0, 188, 212);
+    opacity: 0.6;
+}
+
+.poker.button.raised.secondary:hover {
+    background-color: rgb(255, 64, 129);
+    opacity: 0.6;
+}
+
+.poker.button.raised:hover {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+.poker.button.disabled,
+.poker.button[disabled] {
     cursor: not-allowed;
-    pointer-events: none;
+    color: rgba(0, 0, 0, 0.298039);
 }
 
-.poker-button-selected,
-.poker-button-primary,
-a.poker-button-selected,
-a.poker-button-primary {
-    background-color: #0CB4CC;
-    color: #fff;
+.poker.button.raised.disabled,
+.poker.button.raised[disabled] {
+    cursor: not-allowed;
+    background-color: rgb(229, 229, 229);
+    color: rgba(0, 0, 0, 0.298039);
+    -webkit-box-shadow: 0 0 0 rgb(255,255,255);
+    -moz-box-shadow: 0 0 0 rgb(255,255,255);
+    box-shadow:  0 0 0 rgb(255,255,255);
 }
 
-.poker-button-ghost,
-a.poker-button-ghost {
-    background-color: transparent;
-    border: #F2F2F2 solid 1px;
+.poker.button.disabled:hover,
+.poker.button[disabled]:hover {
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.poker-button-ghost:hover,
-a.poker-button-ghost:hover{
-    border: 1px solid #22C8E1;
-    background-image: none;
+.poker.button.raised.disabled:hover,
+.poker.button.raised[disabled]:hover {
+    background-color: rgb(229, 229, 229);
 }
 
-.poker-button-ghost:active,
-a.poker-button-ghost:active{
-    border: 1px solid #0CB4CC;
+.poker.button .material-icons {
+    vertical-align: middle;
 }

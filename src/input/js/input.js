@@ -124,7 +124,7 @@
 	}
 	
 	window.onload = function(){
-			[].slice.call(document.querySelectorAll(['poker', 'input'])).forEach(function (input) {
+			[].slice.call(document.querySelectorAll('.poker.input')).forEach(function (input) {
 				new PokerInputFx(input);
 			});
 	};
