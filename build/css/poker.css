@@ -714,6 +714,105 @@ template {
 .poker.button .material-icons {
     vertical-align: middle;
 }
+.poker.card.wrapper {
+    -webkit-border-radius: 0.125em;
+    -moz-border-radius: 0.125em;
+    border-radius: 0.125em;
+    border:none;
+    margin-bottom: 1em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    -ms-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    -o-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+}
+
+.poker.card.wrapper:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.156863) 0 0.1875em 0.625em, rgba(0, 0, 0, 0.227451) 0 0.1875em 1em;
+    -moz-box-shadow: rgba(0, 0, 0, 0.156863) 0 0.1875em 0.625em, rgba(0, 0, 0, 0.227451) 0 0.1875em 1em;
+    box-shadow: rgba(0, 0, 0, 0.156863) 0 0.1875em 0.625em, rgba(0, 0, 0, 0.227451) 0 0.1875em 1em;
+}
+
+.poker.card.head {
+    padding: 1em;
+    height: 4.5em;
+    min-width: 32em;
+}
+
+.poker.card.avatar {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(232, 232, 232);
+    height: 4.5em;
+    width: 4.5em;
+    min-width: 0;
+    display: inline-flex;
+    padding: 0;
+    border:none;
+}
+
+.poker.card.head > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.poker.card.title {
+    display: block;
+    height: 2.5em;
+    line-height: 2.5em;
+    width: auto;
+    padding:0;
+    min-width: 0;
+}
+
+.poker.card.subtitle {
+    display: block;
+    height: 2em;
+    line-height: 2em;
+    width: auto;
+    padding:0;
+    min-width: 0;
+    color: rgba(0, 0, 0, 0.541176);
+}
+
+.poker.card.media {
+    min-height: 18em;
+    min-width: 32em;
+    background: rgb(232, 232, 232);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+
+.poker.card.text {
+    padding: 1em;
+}
+
+.poker.card.actions {
+    position: relative;
+    padding: 0.5em;
+    margin-right:0;
+    margin-left:auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.poker.card.actions.left {
+    justify-content: flex-start;
+}
+
+.poker.card.actions button {
+    margin-left: 1em;
+}
+
+.poker.card.right.actions {
+
+}
 .poker-dropdown-menu {
     outline: none;
     position: absolute;

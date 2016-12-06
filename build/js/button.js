@@ -62,7 +62,13 @@
 		
 		this.button.addEventListener('mousedown', function (el) {
 			self.transformDiv.style = `opacity: 1;transform: scale(0);`;
-			var x = el.pageX - self.button.offsetLeft, y = el.pageY - self.button.offsetTop, width = self.button.offsetWidth, backgroundColor = 'rgb(153, 153, 153)';
+			var offsetParent = self.button.offsetParent, offsetTop = self.button.offsetTop, offsetLeft = self.button.offsetLeft;
+			while(offsetParent.nodeName.toLowerCase() != 'body') {
+				offsetTop += offsetParent.offsetTop;
+				offsetLeft += offsetParent.offsetLeft;
+				offsetParent = offsetParent.offsetParent;
+			}
+			var x = el.pageX - offsetLeft, y = el.pageY - offsetTop, width = self.button.offsetWidth, backgroundColor = 'rgb(153, 153, 153)';
 			width - x > x ? width = width - x : width = x;
 			width += 16;
 			
