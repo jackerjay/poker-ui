@@ -1,12 +1,20 @@
+/*********************
+        Standard
+**********************/
+
+/*-----------------
+    Default Button
+-----------------*/
+
 .poker.button {
     border: none;
     color: rgba(0, 0, 0, 0.870588);
     background-color: rgba(0, 0, 0, 0);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 0.125em;
+    -moz-border-radius: 0.125em;
+    border-radius: 0.125em;
     text-align: center;
-    line-height: 36px;
+    line-height: 2.25em;
     font-size: inherit;
     font-weight: inherit;
     position: relative;
@@ -17,48 +25,139 @@
     transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
 }
 
-.poker.button:hover {
-    background-color: rgba(153, 153, 153, 0.2);
-}
+/*-----------------
+    Primary Button
+-----------------*/
 
 .poker.button.primary {
     color: rgb(0, 188, 212);
 }
 
+/*-----------------
+    Secondary Button
+-----------------*/
+
 .poker.button.secondary {
     color: rgb(255, 64, 129);
 }
 
+/*-----------------
+    Raised Button
+-----------------*/
+
 .poker.button.raised {
     background-color: rgb(255, 255, 255);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
-    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117647) 0 0.0625em 0.375em, rgba(0, 0, 0, 0.117647) 0 0.0625em 0.25em;
+    -moz-box-shadow: rgba(0, 0, 0, 0.117647) 0 0.0625em 0.375em, rgba(0, 0, 0, 0.117647) 0 0.0625em 0.25em;
+    box-shadow:rgba(0, 0, 0, 0.117647) 0 0.0625em 0.375em, rgba(0, 0, 0, 0.117647) 0 0.0625em 0.25em;
 }
+
+/*-----------------
+    Raised Primary Button
+-----------------*/
 
 .poker.button.raised.primary {
     background-color: rgb(0, 188, 212);
     color: rgb(255, 255, 255);
 }
 
+/*-----------------
+    Raised Secondary Button
+-----------------*/
+
 .poker.button.raised.secondary {
     background-color: rgb(255, 64, 129);
     color: rgb(255, 255, 255);
 }
+
+/*-----------------
+    FAB Primary Button
+-----------------*/
+
+.poker.button.FAB {
+    height: 3.5em;
+    width: 3.5em;
+    min-width: 0;
+    color: rgb(255, 255, 255);
+    font-size: inherit;
+    font-weight: inherit;
+    vertical-align: bottom;
+    background-color: rgb(0, 188, 212);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 1.25em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.155863) 0 0.1875em 0.625em, rgba(0, 0, 0, 0.227451) 0 0.1875em 0.625em;
+    -moz-box-shadow: rgba(0, 0, 0, 0.155863) 0 0.1875em 0.625em, rgba(0, 0, 0, 0.227451) 0 0.1875em 0.625em;
+    box-shadow: rgba(0, 0, 0, 0.155863) 0 0.1875em 0.625em, rgba(0, 0, 0, 0.227451) 0 0.1875em 0.625em;
+}
+
+/*-----------------
+    FAB Secondary Button
+-----------------*/
+
+.poker.button.FAB.secondary {
+    background-color: rgb(255, 64, 129);
+}
+/**********************
+        Status
+**********************/
+
+/*------------------
+    Default Button Hover
+-------------------*/
+
+.poker.button:hover {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+/*------------------
+    Raised Button Hover
+-------------------*/
+
+.poker.button.raised:hover {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+/*------------------
+    Raised Primary Button Hover
+-------------------*/
 
 .poker.button.raised.primary:hover {
     background-color: rgb(0, 188, 212);
     opacity: 0.6;
 }
 
+/*------------------
+    Raised Secondary Button Hover
+-------------------*/
+
 .poker.button.raised.secondary:hover {
     background-color: rgb(255, 64, 129);
     opacity: 0.6;
 }
 
-.poker.button.raised:hover {
-    background-color: rgba(153, 153, 153, 0.2);
+/*-----------------
+    FAB Primary Button Hover
+-----------------*/
+
+.poker.button.FAB:hover {
+    background-color: rgb(0, 188, 212);
+    opacity: 0.6;
 }
+
+/*-----------------
+    FAB Secondary Button Hover
+-----------------*/
+
+.poker.button.FAB.secondary:hover {
+    background-color: rgb(255, 64, 129);
+    opacity: 0.6;
+}
+
+/*------------------
+    Default Button Disabled
+-------------------*/
 
 .poker.button.disabled,
 .poker.button[disabled] {
@@ -66,8 +165,14 @@
     color: rgba(0, 0, 0, 0.298039);
 }
 
+/*------------------
+    Raised Button Disabled
+-------------------*/
+
 .poker.button.raised.disabled,
-.poker.button.raised[disabled] {
+.poker.button.raised[disabled],
+.poker.button.FAB.disabled,
+.poker.button.FAB[disabled] {
     cursor: not-allowed;
     background-color: rgb(229, 229, 229);
     color: rgba(0, 0, 0, 0.298039);
@@ -76,15 +181,30 @@
     box-shadow:  0 0 0 rgb(255,255,255);
 }
 
+/*------------------
+    Default Button Disabled Hover
+-------------------*/
+
 .poker.button.disabled:hover,
 .poker.button[disabled]:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 
+/*------------------
+    Raised Button Disabled Hover
+-------------------*/
+
 .poker.button.raised.disabled:hover,
-.poker.button.raised[disabled]:hover {
+.poker.button.raised[disabled]:hover,
+.poker.button.FAB.disabled:hover,
+.poker.button.FAB[disabled]:hover {
     background-color: rgb(229, 229, 229);
+    opacity: 1;
 }
+
+/*------------------
+    icons
+-------------------*/
 
 .poker.button .material-icons {
     vertical-align: middle;

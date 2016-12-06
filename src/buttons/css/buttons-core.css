@@ -14,7 +14,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
-    height: 36px;
-    min-width: 88px;
+    height: 2.25em;
+    min-width: 5.5em;
     padding: 0;
 }

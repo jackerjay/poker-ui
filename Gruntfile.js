@@ -46,6 +46,10 @@ module.exports = function (grunt) {
 							'build/css/buttons-core.css',
 							'build/css/buttons.css'
 						]
+					},{
+						'build/css/poker.css': [
+							'build/css/*.css'
+						]
 					}
 				]
 			}

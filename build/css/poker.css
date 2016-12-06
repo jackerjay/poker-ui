@@ -1,0 +1,1313 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* Document
+   ========================================================================== */
+
+html {
+    font-family: Roboto, '微软雅黑', sans-serif; /* 1 */
+    line-height: 1.15; /* 2 */
+    -ms-text-size-adjust: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+    margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+    display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+    margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+    background-color: transparent; /* 1 */
+    -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+    outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+    font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+    display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+    border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: Roboto, '微软雅黑', sans-serif; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+    text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+    display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+    display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+    display: none;
+}
+
+.material-icons {
+    line-height: inherit;
+}
+.poker.button {
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    height: 2.25em;
+    min-width: 5.5em;
+    padding: 0;
+}
+.poker.button {
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    height: 2.25em;
+    min-width: 5.5em;
+    padding: 0;
+}
+/*********************
+        Standard
+**********************/
+
+/*-----------------
+    Default Button
+-----------------*/
+
+.poker.button {
+    border: none;
+    color: rgba(0, 0, 0, 0.870588);
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 0.125em;
+    -moz-border-radius: 0.125em;
+    border-radius: 0.125em;
+    text-align: center;
+    line-height: 2.25em;
+    font-size: inherit;
+    font-weight: inherit;
+    position: relative;
+    -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    -ms-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    -o-transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.23, 1) 0ms;
+}
+
+/*-----------------
+    Primary Button
+-----------------*/
+
+.poker.button.primary {
+    color: rgb(0, 188, 212);
+}
+
+/*-----------------
+    Secondary Button
+-----------------*/
+
+.poker.button.secondary {
+    color: rgb(255, 64, 129);
+}
+
+/*-----------------
+    Raised Button
+-----------------*/
+
+.poker.button.raised {
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.117647) 0 0.0625em 0.375em, rgba(0, 0, 0, 0.117647) 0 0.0625em 0.25em;
+    -moz-box-shadow: rgba(0, 0, 0, 0.117647) 0 0.0625em 0.375em, rgba(0, 0, 0, 0.117647) 0 0.0625em 0.25em;
+    box-shadow:rgba(0, 0, 0, 0.117647) 0 0.0625em 0.375em, rgba(0, 0, 0, 0.117647) 0 0.0625em 0.25em;
+}
+
+/*-----------------
+    Raised Primary Button
+-----------------*/
+
+.poker.button.raised.primary {
+    background-color: rgb(0, 188, 212);
+    color: rgb(255, 255, 255);
+}
+
+/*-----------------
+    Raised Secondary Button
+-----------------*/
+
+.poker.button.raised.secondary {
+    background-color: rgb(255, 64, 129);
+    color: rgb(255, 255, 255);
+}
+
+/*-----------------
+    FAB Primary Button
+-----------------*/
+
+.poker.button.FAB {
+    height: 3.5em;
+    width: 3.5em;
+    min-width: 0;
+    color: rgb(255, 255, 255);
+    font-size: inherit;
+    font-weight: inherit;
+    vertical-align: bottom;
+    background-color: rgb(0, 188, 212);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 1.25em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.155863) 0 0.1875em 0.625em, rgba(0, 0, 0, 0.227451) 0 0.1875em 0.625em;
+    -moz-box-shadow: rgba(0, 0, 0, 0.155863) 0 0.1875em 0.625em, rgba(0, 0, 0, 0.227451) 0 0.1875em 0.625em;
+    box-shadow: rgba(0, 0, 0, 0.155863) 0 0.1875em 0.625em, rgba(0, 0, 0, 0.227451) 0 0.1875em 0.625em;
+}
+
+/*-----------------
+    FAB Secondary Button
+-----------------*/
+
+.poker.button.FAB.secondary {
+    background-color: rgb(255, 64, 129);
+}
+/**********************
+        Status
+**********************/
+
+/*------------------
+    Default Button Hover
+-------------------*/
+
+.poker.button:hover {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+/*------------------
+    Raised Button Hover
+-------------------*/
+
+.poker.button.raised:hover {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+/*------------------
+    Raised Primary Button Hover
+-------------------*/
+
+.poker.button.raised.primary:hover {
+    background-color: rgb(0, 188, 212);
+    opacity: 0.6;
+}
+
+/*------------------
+    Raised Secondary Button Hover
+-------------------*/
+
+.poker.button.raised.secondary:hover {
+    background-color: rgb(255, 64, 129);
+    opacity: 0.6;
+}
+
+/*-----------------
+    FAB Primary Button Hover
+-----------------*/
+
+.poker.button.FAB:hover {
+    background-color: rgb(0, 188, 212);
+    opacity: 0.6;
+}
+
+/*-----------------
+    FAB Secondary Button Hover
+-----------------*/
+
+.poker.button.FAB.secondary:hover {
+    background-color: rgb(255, 64, 129);
+    opacity: 0.6;
+}
+
+/*------------------
+    Default Button Disabled
+-------------------*/
+
+.poker.button.disabled,
+.poker.button[disabled] {
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.298039);
+}
+
+/*------------------
+    Raised Button Disabled
+-------------------*/
+
+.poker.button.raised.disabled,
+.poker.button.raised[disabled],
+.poker.button.FAB.disabled,
+.poker.button.FAB[disabled] {
+    cursor: not-allowed;
+    background-color: rgb(229, 229, 229);
+    color: rgba(0, 0, 0, 0.298039);
+    -webkit-box-shadow: 0 0 0 rgb(255,255,255);
+    -moz-box-shadow: 0 0 0 rgb(255,255,255);
+    box-shadow:  0 0 0 rgb(255,255,255);
+}
+
+/*------------------
+    Default Button Disabled Hover
+-------------------*/
+
+.poker.button.disabled:hover,
+.poker.button[disabled]:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*------------------
+    Raised Button Disabled Hover
+-------------------*/
+
+.poker.button.raised.disabled:hover,
+.poker.button.raised[disabled]:hover,
+.poker.button.FAB.disabled:hover,
+.poker.button.FAB[disabled]:hover {
+    background-color: rgb(229, 229, 229);
+    opacity: 1;
+}
+
+/*------------------
+    icons
+-------------------*/
+
+.poker.button .material-icons {
+    vertical-align: middle;
+}
+.poker-dropdown-menu {
+    outline: none;
+    position: absolute;
+    text-align: left;
+    background-color: #fff;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    list-style-type: none;
+    border: 1px solid #d9d9d9;
+    display: none;
+    padding: 0;
+    margin: 0.2em 0 0 0;
+    max-height: 100px;
+    min-width: 8em;
+    overflow-y: auto;
+    z-index: 1000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;;
+}
+
+.poker-dropdown-menu.poker-dropdown-visible {
+    display: inline-block;
+}
+
+.poker-dropdown-wrapper {
+    margin: 0.5em;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker-dropdown-menu + span {
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    border: 1px solid #d9d9d9;
+    height: auto;
+    width: 8em;
+    text-align: left;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    cursor: pointer;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker-dropdown-menu + span:after{
+    height: 0.2em;
+    width: 0.2em;
+    border-bottom: 2px solid #c0c0c0;
+    border-right: 2px solid #c0c0c0;
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: 0.5em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+}
+
+.poker-dropdown-menu.poker-dropdown-visible + span:hover:after{
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.poker-dropdown-item {
+    cursor: pointer;
+    border-top: 1px solid #FAFAFA;
+}
+
+.poker-dropdown-item a {
+    padding: 0.2em 0.3em;
+    display: block;
+}
+
+.poker-dropdown-menu + span:hover,
+.poker-dropdown-menu:hover {
+    border: 1px solid #0CB4CC;
+}
+
+.poker-dropdown-item:hover{
+    background-color: rgba(57, 214, 255, 0.3);
+}
+
+.poker-dropdown {
+    display: none;
+}
+
+
+.poker-form input[type="text"],
+.poker-form input[type="password"],
+.poker-form input[type="email"],
+.poker-form input[type="tel"],
+.poker-form input[type="number"],
+.poker-form input[type="url"],
+.poker-form input[type="date"],
+.poker-form input[type="month"],
+.poker-form input[type="time"],
+.pure-form input[type="datetime"],
+.pure-form input[type="datetime-local"],
+.pure-form input[type="week"],
+.pure-form input[type="search"],
+.pure-form input[type="color"],
+.poker-form textarea,
+.poker-form select{
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: with 1s;
+    height: 2em;
+    width: 100%;
+}
+
+.poker-form textarea {
+    overflow: hidden;
+}
+
+.poker-form input[type="text"]:focus,
+.poker-form input[type="password"]:focus,
+.poker-form input[type="email"]:focus,
+.poker-form input[type="tel"]:focus,
+.poker-form input[type="number"]:focus,
+.poker-form input[type="url"]:focus,
+.poker-form input[type="date"]:focus,
+.poker-form input[type="month"]:focus,
+.poker-form input[type="time"]:focus,
+.pure-form input[type="datetime"]:focus,
+.pure-form input[type="datetime-local"]:focus,
+.pure-form input[type="week"]:focus,
+.pure-form input[type="search"]:focus,
+.pure-form input[type="color"]:focus,
+.poker-form textarea:focus,
+.poker-form select:focus {
+    border: 1px solid #0CB4CC;
+    -webkit-box-shadow: 0 0 0 2px rgba(78, 255, 164, 0.40);
+    -moz-box-shadow: 0 0 0 2px rgba(78, 255, 164, 0.40);
+    box-shadow: 0 0 0 2px rgba(78, 255, 164, 0.40);
+}
+
+.poker-form input[type="text"]:hover,
+.poker-form input[type="password"]:hover,
+.poker-form input[type="email"]:hover,
+.poker-form input[type="tel"]:hover,
+.poker-form input[type="number"]:hover,
+.poker-form input[type="url"]:hover,
+.poker-form input[type="date"]:hover,
+.poker-form input[type="month"]:hover,
+.poker-form input[type="time"]:hover,
+.pure-form input[type="datetime"]:hover,
+.pure-form input[type="datetime-local"]:hover,
+.pure-form input[type="week"]:hover,
+.pure-form input[type="search"]:hover,
+.pure-form input[type="color"]:hover,
+.poker-form textarea:hover,
+.poker-form select:hover {
+    border: 1px solid #0CB4CC;
+}
+
+.poker-form select {
+    height: 2.25em;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+}
+
+.poker-form input[type="checkbox"],
+.poker-form input[type="radio"] {
+    display: none;
+}
+
+.poker-form input[type="checkbox"] + label,
+.poker-form input[type="radio"] + label {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.5em;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.poker-form input[type="checkbox"] + label:before,
+.poker-form input[type="radio"] + label:before {
+    border:1px solid #e2e2e2;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    content: '';
+}
+
+.poker-form input[type="checkbox"] + label:hover:before,
+.poker-form input[type="radio"] + label:hover:before {
+    border-color: #0CB4CC;
+}
+
+.poker-form input[type="radio"] + label:before {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.poker-form input[type="checkbox"] + label:before {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.poker-form input[type="checkbox"] + label:after,
+.poker-form input[type="radio"] + label:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+.poker-form input[type="radio"] + label:after {
+    top: 0.2em;
+    left: 0.2em;
+    height: 0.6em;
+    width: 0.6em;
+    background: #0CB4CC;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker-form input[type="checkbox"] + label:after {
+    top: 0.2em;
+    left: 0.35em;
+    border-width: 0.15em;
+    border-color: #fff;
+    border-top:0;
+    border-left:0;
+    border-style:solid;
+    width: 0.3em;
+    height: 0.6em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker-form input[type="radio"]:checked + label:before {
+    border-color: #0CB4CC;
+}
+
+.poker-form input[type="checkbox"]:checked + label:before {
+    border-color: #0CB4CC;
+    background-color: #0CB4CC;
+}
+
+.poker-form input[type="checkbox"]:checked + label:after,
+.poker-form input[type="radio"]:checked + label:after {
+    display: block;
+}
+
+.poker-form input[type="checkbox"][disabled] + label,
+.poker-form input[type="radio"][disabled] + label {
+    cursor: not-allowed;
+    color: #c0c0c0;
+}
+
+.poker-form input[type="checkbox"][disabled] + label:before,
+.poker-form input[type="radio"][disabled] + label:before {
+    background-color: #e2e2e2;
+}
+
+.poker-form input[type="checkbox"][disabled] + label:hover,
+.poker-form input[type="checkbox"][disabled] + label:before,
+.poker-form input[type="checkbox"][disabled] + label:after,
+.poker-form input[type="radio"][disabled] + label:hover,
+.poker-form input[type="radio"][disabled] + label:before,
+.poker-form input[type="radio"][disabled] + label:after {
+    cursor: not-allowed;
+}
+
+.poker-form input[type="checkbox"][disabled] + label:hover:before,
+.poker-form input[type="radio"][disabled] + label:hover:before {
+    border: 1px solid #e2e2e2;
+}
+
+/*********************
+        Standard
+**********************/
+
+/*-----------------
+        Inputs
+-----------------*/
+.poker.input input{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-size: inherit;
+    margin-top: 14px;
+}
+
+/*-----------------
+        Label
+-----------------*/
+
+.poker.input.label {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.298039);
+    top: 38px;
+    font-size: inherit;
+    -webkit-transform: scale(1) translate(0, 0);
+    -moz-transform: scale(1) translate(0, 0);;
+    -ms-transform: scale(1) translate(0, 0);;
+    -o-transform: scale(1) translate(0, 0);;
+    transform: scale(1) translate(0, 0);;
+    z-index: 1;
+    pointer-events: none;
+    -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -ms-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -o-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+/*-----------------
+    Wrapper Div
+-----------------*/
+
+.poker.input.div {
+    position: relative;
+    display: inline-block;
+    width: 256px;
+    height: 72px;
+}
+
+/*------------------
+    Placeholder
+-------------------*/
+
+.poker.input.placeholder {
+    opacity: 0;
+    bottom: 12px;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.298039);
+    -webkit-transition: all 450ms ;
+    -moz-transition: all 450ms;
+    -ms-transition: all 450ms;
+    -o-transition: all 450ms;
+    transition: all 450ms;
+}
+
+/*------------------
+  Inputs Bottom Line
+-------------------*/
+
+.poker.input.bottom.line {
+    border-top:none rgb(224,224,224);
+    border-right: none rgb(224,224,224);
+    border-bottom: 1px solid rgb(224,224,224);
+    border-left: none rgb(224,224,2224);
+    bottom: 8px;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/*------------------
+  Inputs Bottom Resting Line
+-------------------*/
+
+.poker.input.bottom.resting.line {
+    border-top:none rgb(0, 188, 212);
+    border-right:none rgb(0, 188, 212);
+    border-left:none rgb(0, 188, 212);
+    border-bottom:2px solid rgb(0, 188, 212);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -ms-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -o-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+
+/************************
+        States
+************************/
+
+/*------------------
+    Inputs Disabled
+-------------------*/
+
+.poker.input input[disabled],
+.poker.input.disabled {
+    background-color: transparent;
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.298039);
+}
+
+/*-----------------
+    Inputs Div Wrapper Disabled
+-----------------*/
+
+.poker.input.div.disabled {
+    cursor: not-allowed;
+}
+
+/*-----------------
+     Input Bottom Line Disabled
+-----------------*/
+
+.poker.input.bottom.line.disabled {
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.298039);
+}
+
+/*-----------------
+     Label Active
+-----------------*/
+
+.poker.input.label.active {
+    color: rgb(0, 188, 212);
+    transform-origin: left top 0px;
+    -webkit-transform: scale(0.75) translate(0px, -28px);
+    -moz-transform: scale(0.75) translate(0px, -28px);
+    -ms-transform: scale(0.75) translate(0px, -28px);
+    -o-transform: scale(0.75) translate(0px, -28px);
+    transform: scale(0.75) translate(0px, -28px);
+}
+
+/*-----------------
+     Label Active Float
+(when focus not here and the input has value)
+-----------------*/
+
+.poker.input.label.active.float {
+    color: rgba(0, 0, 0, 0.298039);
+}
+
+/*-----------------
+    Placeholder Active
+(when the input has not value and focus here)
+-----------------*/
+
+.poker.input.placeholder.active {
+    opacity: 1;
+}
+
+/*-----------------
+    Resting Line Active
+    (when focus here)
+-----------------*/
+
+.poker.input.bottom.resting.line.active {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+.poker.select {
+    display: inline-block;
+    outline: none;
+}
+
+.poker.select.options{
+    outline: none;
+    position: absolute;
+    text-align: left;
+    display: none;
+    background-color: #fff;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    list-style-type: none;
+    border: 1px solid #d9d9d9;
+    padding: 0;
+    margin: 0.2em 0 0 0;
+    max-height: 100px;
+    min-width: 8em;
+    overflow-y: auto;
+    z-index: 1000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker.select.options ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.poker.select.active .options{
+    display: block;
+}
+
+.poker.select.option {
+    display: block;
+    cursor: pointer;
+    border-top: 1px solid #FAFAFA;
+}
+
+.poker.select.option span {
+    padding: 0.2em 0.3em;
+    display: block;
+}
+
+.poker.select.option:hover {
+    background-color: rgba(57, 214, 255, 0.3);
+}
+
+.poker.select:focus {
+
+}
+
+.poker.select.active {
+
+}
+
+.poker.select.placeholder {
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    border: 1px solid #d9d9d9;
+    height: auto;
+    width: 8em;
+    text-align: left;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    cursor: pointer;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poker.select.placeholder:after {
+    height: 0.2em;
+    width: 0.2em;
+    border-bottom: 2px solid #c0c0c0;
+    border-right: 2px solid #c0c0c0;
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: 0.5em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+}
+
+.poker.select.placeholder:hover:after{
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.poker.select.options {
+
+}
+
+.poker.select.option.selected {
+
+}

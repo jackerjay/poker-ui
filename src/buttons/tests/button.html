@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="../../../build/css/base.css">
 	<link rel="stylesheet" href="../../../build/css/buttons.css">
 </head>
-<body>
+<body style="font-size: 30px;">
 	<h2>Poker Button Test</h2>
 	<div>
 		<h2>Flat Buttons</h2>
@@ -45,6 +45,17 @@
 		<a class="poker raised primary button">Primary</a>
 		<a class="poker raised secondary button">Secondary</a>
 		<a class="poker raised button disabled" href="http://github.com">disabled</a>
+
+		<h3>With Icon</h3>
+		<button class="poker raised button"><i class="material-icons">face</i></button>
+		<button class="poker raised button"><i class="material-icons" style="color:red">info</i></button>
+		<button class="poker raised button"><i class="material-icons" style="color:grey">g_translate</i>Button</button>
+		<button class="poker raised button">代码 <i class="material-icons">code</i></button>
+
+		<h2>Floating Action Button</h2>
+		<button class="poker button FAB">+</button>
+		<button class="poker button FAB secondary">+</button>
+		<button class="poker button FAB disabled">+</button>
 	</div>
 	<script src="../../../build/js/classie.js"></script>
 	<script src="../../../build/js/button.js"></script>
